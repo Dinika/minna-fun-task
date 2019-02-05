@@ -1,6 +1,10 @@
 ## Minna Fun Task :sparkles:
 
-!!Get stats on the famous TV show - Silicon Valley
+Get stats on the famous TV show - Silicon Valley
+
+## Screenshot of consoled output
+
+![screenshot from 2019-02-06 03-33-07](https://user-images.githubusercontent.com/11242410/52307232-05d7d000-29c0-11e9-8f8f-a82468b2a140.png)
 
 ## Getting Started :rocket:
 
