@@ -29,14 +29,14 @@ class HomePageContainer extends Component {
           return axios.get(url);
         });
 
-        Promise.all(listOfPromises).then(episodes => {
-          const totalRunTime = episodes.reduce((runTime, episode) => {
+        Promise.all(listOfPromises).then(episodesData => {
+          const totalRunTime = episodesData.reduce((runTime, episode) => {
             const episodeRuntime = +episode.data.Runtime.split(' ')[0];
             return runTime + episodeRuntime;
           }, 0);
           console.log(`${totalRunTime} minutes`);
 
-          const plotsOfEpisodes = episodes.map(episode => ({
+          const plotsOfEpisodes = episodesData.map(episode => ({
             title: episode.data.Title,
             plot: episode.data.Plot
           }));
